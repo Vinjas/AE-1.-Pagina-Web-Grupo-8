@@ -1,0 +1,66 @@
+/* 
+====================
+Menu Horizontal
+====================
+*/
+.menu-horizontal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-horizontal-link {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+}
+
+.menu-horizontal-link:not(:last-child) {
+    padding-right: 16px;
+}
+
+.menu-horizontal-link:hover {
+    color: var(--yellow);
+}
+
+/* 
+====================
+Menu Vertical
+====================
+*/
+.menu-vertical {
+    width: 100%;
+}
+
+.menu-vertical-titulo {
+    font-family: var(--Playfair);
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.menu-vertical-texto {
+    color: var(--grey);
+    padding: 25px 0;
+}
+
+.menu-vertical-image {
+    max-width: 100%;
+}
+
+
+/* 
+====================
+Media Querys para breakpoint >= 768
+====================
+*/
+@media only screen and (min-width: 768px) {
+    .menu-horizontal {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .menu-vertical {
+        width: 35%;
+    }    
+}

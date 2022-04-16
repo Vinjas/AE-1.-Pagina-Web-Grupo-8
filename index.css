@@ -1,0 +1,9 @@
+/* Importación de todos los archivos CSS en el stylesheet main */ 
+
+@import "/css/fuentes.css";
+@import "/css/variables.css";
+@import "/css/base.css";
+@import "/css/cabecera.css";
+@import "/css/menus.css";
+@import "/css/contenido.css";
+@import "/css/footer.css";

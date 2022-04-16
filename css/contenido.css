@@ -1,0 +1,65 @@
+/* 
+====================
+Contenido
+====================
+*/
+
+.contenido-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    color: var(--dark-green);
+    padding: 50px;
+}
+
+.contenido {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.contenido-item {
+    border-bottom: none;
+    margin-bottom: none;
+}
+
+.contenido-cabecera {
+    font-family: var(--Playfair);
+    font-size: 28px;
+}
+
+.contenido-item:not(:last-child) {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--light-grey2);
+}
+
+.contenido-articulo {
+    padding: 25px 0;
+    color: var(--grey);
+}
+
+.contenido-footer {
+    width: fit-content;
+}
+
+.contenido-footer-link {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+
+/* 
+====================
+Media Querys para breakpoint >= 768
+====================
+*/
+
+@media only screen and (min-width: 768px) {
+    .contenido-wrapper {
+        flex-direction: row;
+    }
+
+    .contenido {
+        width: 65%;
+    }
+}
