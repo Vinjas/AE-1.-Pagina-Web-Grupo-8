@@ -1,0 +1,103 @@
+/* 
+====================
+Footer
+====================
+*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 30px 50px;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-family: var(--Playfair);
+    color: var(--yellow);
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.footer-logo-titulo {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-menu-link {
+    font-size: 14px;
+    color: var(--grey);
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.footer-menu-link:hover {
+    color: var(--white);
+}
+
+
+.footer-copyright {
+    color: var(--grey);
+    font-size: 14px;
+    border-top: 1px solid var(--light-green);
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+/* 
+====================
+Media Querys para breakpoint >= 768
+====================
+*/
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding: 30px 50px;
+    }
+    
+    .footer-contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-title {
+        width: 50%;
+        text-align: left;
+    }    
+
+    .footer-logo {
+        width: 25%;
+        padding: 0;
+    }
+    
+    .footer-menu {
+        width: 25%;
+        text-align: right;
+    }
+    
+
+}

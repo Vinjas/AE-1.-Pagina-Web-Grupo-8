@@ -1,0 +1,148 @@
+/* 
+====================
+Cabecera
+====================
+*/
+
+.cabecera-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 30px 20px;
+}
+
+.cabecera-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 10px;
+}
+
+.cabecera-titulo {
+    font-family: var(--Raleway);
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.cabecera-contenido-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding-top: 50px;
+}
+
+.cabecera-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cabecera-contenido-titulo {
+    font-family: var(--Playfair);
+    font-size: 36px;
+    width: 100%;
+    padding: 0 20px 30px;
+    text-align: center;
+}
+
+.cabecera-contenido-enlaces {
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.cabecera-contenido-enlaces--texto {
+    color: var(--grey);
+    line-height: 30px;
+}
+
+.cabecera-contenido-enlaces--botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cabecera-contenido-enlaces--contacto {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    color: var(--dark-green);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cabecera-contenido-enlaces--contacto:hover {
+    background-color: var(--grey);
+}
+
+.cabecera-contenido-enlaces--link {
+    text-decoration: none;
+    color: var(--yellow);
+    padding-top: 25px;
+}
+
+.cabecera-contenido-enlaces--link:hover {
+    color: var(--grey);
+}
+
+.cabecera-contenido-image {
+    max-width: 100%;
+    padding: 50px 20px 0;
+}
+
+/* 
+====================
+Media Querys para breakpoint >= 768
+====================
+*/
+
+@media only screen and (min-width: 768px) { 
+    .cabecera-wrapper {
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    .cabecera-logo {
+        padding: 0;
+    }
+
+    .cabecera-contenido {
+        flex-direction: row;
+    }
+
+    .cabecera-contenido-enlaces--botones {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecera-contenido-image {
+        padding: 50px 50px 0;
+    }
+
+    .cabecera-contenido-enlaces--link {
+        padding: 0;
+    }
+
+    .cabecera-contenido-titulo {
+        width: 50%;
+        padding: 0 50px;
+        text-align: left;
+    }
+
+    .cabecera-contenido-enlaces {
+        width: 50%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,18 @@
+/* Importación de las variables CSS */ 
+
+:root {
+    /* Fuentes */
+    --RalewayRegular: 'Raleway', sans-serif;
+    --Playfair: 'Playfair Display', serif;
+
+    /* Colores */ 
+    --dark-green: #17241f;
+    --light-green: #26322e;
+    --yellow: #d8f366;
+    --pure-white: #fff ;
+    --white: #fdfdfd;
+    --pure-black: #000;
+    --light-grey: #f4f6f8;
+    --light-grey2: #d9ddde;
+    --grey: #8c9392;
+}
