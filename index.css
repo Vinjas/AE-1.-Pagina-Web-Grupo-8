@@ -1,4 +1,4 @@
-/* Importación de todos los archivos CSS en el stylesheet main */ 
+/* Importación de todos los archivos CSS en el stylesheet main */
 
 @import "/css/fuentes.css";
 @import "/css/variables.css";
@@ -7,3 +7,4 @@
 @import "/css/menus.css";
 @import "/css/contenido.css";
 @import "/css/footer.css";
+@import "/css/dropdown.css";

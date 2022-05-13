@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacta con nosotros</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <div class="cabecera-wrapper">
+      <div class="cabecera-logo">
+        <img class="svg-logo" src="/svg/logo.svg">
+
+        <header class="cabecera">
+          <h1 class="cabecera-titulo">| Grupo 8</h1>
+        </header>
+      </div>
+
+      <nav class="menu-horizontal">
+        <a class="menu-horizontal-link" href="index.html">Home</a>
+        <div class="dropdown">
+          <a class="menu-horizontal-link" href="#">¿Quiénes somos?</a>
+          <div class="dropdown-content">
+            <a class="menu-horizontal-link" href="formulario.html">Contacto</a>
+            <a class="menu-horizontal-link" href="#">Localización</a>
+            <a class="menu-horizontal-link" href="#">Sobre Nosotros</a>
+          </div>
+        </div>
+        <a class="menu-horizontal-link" href="#">Areas de Actuacion</a>
+        <a class="menu-horizontal-link" href="#">Noticias</a>
+        <a class="menu-horizontal-link" href="#">Publicaciones</a>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="form-contact">
+    <form class="form" action="">
+      <h4>Formulario de Contacto</h4>
+      <div class="form-field">
+        <label for="nombre">Nombre:</label>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre" autofocus
+          required />
+      </div>
+      <div class="form-field">
+        <label for="apellidos">Apellidos:</label>
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos"
+          required />
+      </div>
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su email" required />
+      </div>
+
+      <div class="form-field">
+        <label for="telefono">Telefono:</label>
+        <input class="controls" type="number" min="9" name="telefono" id="telefono" placeholder="Ingrese su teléfono"
+          required />
+      </div>
+
+      <div class="form-field">
+        <label for="consulta">Seleccione el motivo de la consulta:</label>
+        <select class="desplegable" name="consulta">
+          <option value="Selec">Ninguno </option>
+          <option value="Ref">Reformas</option>
+          <option value="Cons">Construcción</option>
+          <option value="Aseso" selected>Asesoramiento</option>
+          <option value="Presu">Presupuesto</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="contacto"> ¿Por donde prefiere ser contactado?</label> <br>
+        <input type="radio" name="contacto" value="T" checked />Teléfono <br>
+        <input type="radio" name="contacto" value="E" />Email <br>
+        <br>
+      </div>
+
+      <div class="form-field">
+        <label for="comentarios">Comentarios:</label>
+        <textarea style="resize: none;" name="observaciones"></textarea>
+      </div>
+
+      <div class="form-field">
+        <p class="parrafo">Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+      </div>
+
+      <input class="boton" type="submit" value="Enviar" required />
+    </form>
+  </div>
+
+  <footer class="footer-alt">
+    <div class="footer-cont">
+      <div class="footer-logo">
+        <img class="svg-logo" src="/svg/logo.svg">
+        <header>
+          <h2 class="footer-logo-titulo"> | Grupo 8</h2>
+        </header>
+      </div>
+      <nav class="footer-menu">
+        <a class="footer-menu-link" href="index.html">Home</a>
+        <a class="footer-menu-link" href="#">Quienes Somos</a>
+        <a class="footer-menu-link" href="#">Areas de Actuacion</a>
+        <a class="footer-menu-link" href="formulario.html">Contacto</a>
+        <a class="footer-menu-link" href="#">Noticias</a>
+        <a class="footer-menu-link" href="#">Publicaciones</a>
+        <a class="footer-menu-link" href="#">Localización</a>
+      </nav>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright © - 2022 - Gabriel Hernando Castro Sánchez, Alicia Rebollo Sanchez, Carlos de Vega Muñoz, Daniel
+        Vinyas
+        Torres</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

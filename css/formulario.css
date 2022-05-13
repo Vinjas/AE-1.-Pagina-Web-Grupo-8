@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: #f4f6f8;
+}
+
+
+.form-contact {
+  width: 90%;
+  background: #17241f;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  border-radius: 7px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-contact h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: inline-block;
+  padding-bottom: 9px;
+}
+
+.form-field {
+  margin-bottom: 5px;
+}
+
+.controls {
+  width: 100%;
+  background: #26322e;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  border: 1px solid #d9ddde;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.form-contact p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.form-contact a:hover {
+  color: white;
+  text-decoration: underline;
+
+}
+
+.form-contact .boton {
+  width: 100%;
+  background: #26322e;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 7px;
+
+}
+
+.desplegable {
+  width: 100%;
+  background: #26322e;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 16px;
+  border: 1px solid #d9ddde;
+  font-size: 17px;
+
+}
+
+textarea {
+  width: 100%;
+  background: #26322e;
+  border-radius: 4px;
+  padding: 10px;
+  color: var(--white);
+  margin-bottom: 16px;
+  border: 1px solid #d9ddde;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-contact .boton:hover {
+  color: #17241f;
+  background-color: #d9ddde;
+}
+
+.parrafo a {
+  color: var(--yellow);
+}
+
+.footer-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 30px 50px;
+}
+
+.footer-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
+}
+
+.footer-logo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.footer-menu-link {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer-copyright {
+  color: var(--grey);
+  font-size: 14px;
+  border-top: 1px solid var(--light-green);
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+/* 
+====================
+Media Querys para breakpoint >= 768
+====================
+*/
+
+@media only screen and (min-width: 768px) {
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-contact {
+    width: 400px;
+  }
+
+}
