@@ -36,10 +36,28 @@ Cabecera
     padding-top: 50px;
 }
 
+.cabecera-contenido-wrapper-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .cabecera-contenido {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cabecera-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
     flex-direction: column;
     width: 100%;
 }
@@ -52,9 +70,61 @@ Cabecera
     text-align: center;
 }
 
+.cabecera-contenido-texto {
+    font-family: var(--Playfair);
+    font-size: 36px;
+    width: 100%;
+    padding: 0 20px 30px;
+    text-align: left;
+}
+
+.cabecera-contenido-image-about {
+    font-family: var(--Raleway);
+    font-size: 17px;
+    width: 100%;
+    padding: 0 0px 30px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.cabecera-contenido-texto-about {
+    font-family: var(--Raleway);
+    font-size: 17px;
+    width: 100%;
+    padding: 0 20px 30px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.cabecera-contenido-texto-about h2 {
+    margin-bottom: 30px;
+}
+
+.cabecera-contenido-texto-about p {
+    margin-bottom: 30px;
+}
+
 .cabecera-contenido-enlaces {
     width: 100%;
     padding: 0 50px;
+    text-align: center;
+}
+
+.cabecera-contenido-right {
+    width: 100%;
+    text-align: center;
+}
+
+.cabecera-contenido-left {
+    width: 100%;
+    padding: 0 0px;
+    text-align: center;
+}
+.cabecera-contenido-enlaces-variant {
+    width: 100%;
+    padding: 0px;
     text-align: center;
 }
 
@@ -99,6 +169,11 @@ Cabecera
     padding: 50px 20px 0;
 }
 
+.cabecera-contenido-image-area {
+    max-width: 100%;
+    padding: 0px 0px 10px;
+}
+
 /* 
 ====================
 Media Querys para breakpoint >= 768
@@ -120,6 +195,42 @@ Media Querys para breakpoint >= 768
 
     .cabecera-contenido {
         flex-direction: row;
+    }
+
+    .cabecera-contenido-left {
+        width: 75%;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .cabecera-contenido-image-about {
+        font-family: var(--Raleway);
+        font-size: 17px;
+        width: 50%;
+        padding: 0 75px 30px;
+        text-align: left;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .cabecera-contenido-image-variant {
+        font-family: var(--Raleway);
+        font-size: 17px;
+        width: 50%;
+        padding: 0 0px 0px;
+        text-align: left;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .cabecera-contenido-image-variant2 {
+        font-family: var(--Raleway);
+        font-size: 17px;
+        width: 75%;
+        padding: 0 0px 0px;
+        text-align: left;
+        font-weight: 300;
+        line-height: 1.5;
     }
 
     .cabecera-contenido-enlaces--botones {
